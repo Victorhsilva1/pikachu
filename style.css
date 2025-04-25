@@ -1,0 +1,183 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+  }
+  
+body {
+    background-color: #f5cf06;
+    
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    padding: 70px;
+
+}
+
+p {
+ color: #8E4106;
+ font-family: "Righteous", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+}
+
+h2 {
+    color: #8E4106;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 84px;
+    font-style: normal;
+}
+
+.download {
+    color: #ffffff;
+    font-family: "Righteous", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 48px;
+     transition: 2s
+}
+
+button :hover {
+    color: #f5cf06;
+}
+
+.legend p {
+    max-width: 530px;
+}
+
+.legend {
+    margin-top: 260px;
+    margin-left: 50px;
+}
+
+.pikachuBack {
+    color: #ffffff20;
+    font-family: "Righteous", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 700px ;
+     z-index: 0;
+     position: absolute;
+}
+
+.pikachuFront {
+    color: #ffffff;
+    font-family: "Righteous", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 400px;
+     z-index: 1;
+     position: absolute;
+     margin-top: 350px;
+}
+
+.pikachuImg {
+    z-index: 2;
+    top: 300px;
+    position: absolute;
+}
+
+article {
+    display: flex;
+    padding-left: 70px ;
+    margin-top: 600px;
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-top: 360px;
+
+}
+
+button {
+    background-color: #8E4106;
+    width: 411px;
+    height: 100px;
+    margin-left: 1750px;
+    margin-top: 380px;
+}
+
+button img {
+    margin-right: 40px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Intervalo entre 576px e 768px */
+@media (min-width: 576px) and (max-width: 768px) { 
+    .pikachuBack { 
+        font-size: 150px;
+        margin-left: 130px;
+    }
+}
+
+/* Intervalo entre 768px e 1920px */
+@media (min-width: 768px) and (max-width: 1920px) { 
+    .pikachuFront { 
+        margin-top: 200px;
+    }
+    .pikachuBack { 
+        font-size: 10px;
+    }
+    button {
+        margin-left: 10px;
+        margin-top: 190px;
+    }
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .legend p {
+        max-width: 1000px;
+    }
+}
+
+/* Para telas com mais de 1920px */
+@media (min-width: 1920px) { 
+    .pikachuFront { 
+        margin-top: 150px;
+    }
+    .pikachuBack { 
+        font-size: 530px;
+    }
+    .legend {
+        margin-top: 120px;
+    }
+    button {
+        margin-left: 640px;
+        margin-top: 190px;
+    }
+    .pikachuImg {
+        top: 120px;
+    }
+
+    nav {
+        padding: 35px;
+    }
+    footer {
+        margin-top: 20px;
+    }
+    article {
+        margin-top: 500px;
+    }
+}
